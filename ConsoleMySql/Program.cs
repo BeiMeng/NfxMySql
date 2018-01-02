@@ -14,9 +14,9 @@ namespace ConsoleMySql
         {
             using (BloggingContext db = new BloggingContext())
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 3; i++)
                 {
-                    db.Blogs.Add(new Blog { Name = "小明1" + i });
+                    db.Blogs.Add(new Blog { Name = "小明10" + i });
                 }
                 db.SaveChanges();
                 foreach (var item in db.Blogs)
